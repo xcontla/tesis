@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Lo que se va a ver...}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Esquema}{2}{0}{1}
+\beamer@sectionintoc {2}{Antecedentes}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Modelos de Iluminaci\'on}{3}{0}{2}
+\beamer@sectionintoc {3}{Objetivo}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Objetivo}{11}{0}{3}
+\beamer@sectionintoc {4}{Metolodog\IeC {\'\i }a}{12}{0}{4}
+\beamer@subsectionintoc {4}{1}{Mapa de Luces}{12}{0}{4}
+\beamer@subsectionintoc {4}{2}{Mapa de Sombras}{13}{0}{4}
+\beamer@subsectionintoc {4}{3}{M\IeC {\'e}todo propuesto}{14}{0}{4}
+\beamer@sectionintoc {5}{Relevancia y Contribuci\IeC {\'o}n del trabajo}{15}{0}{5}
+\beamer@sectionintoc {6}{Referencias}{16}{0}{6}
+\beamer@subsectionintoc {6}{1}{Ref1}{16}{0}{6}
+\beamer@subsectionintoc {6}{2}{Ref2}{17}{0}{6}
+\beamer@sectionintoc {7}{Calendario de Atividades}{18}{0}{7}

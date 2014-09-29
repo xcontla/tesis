@@ -1,0 +1,218 @@
+\documentclass[xcolor=table,hyperref={pdfencoding=unicode}]{beamer}
+\mode<presentation> {
+  \usetheme{Warsaw}            % Tema seleccionado.
+  }
+  \setbeamercovered{transparent}
+  \setbeamertemplate{blocks}[rounded][shadow=true]
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages}
+\usepackage{alltt}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{graphicx}
+%\usepackage{multimedia}
+\usepackage{movie15}
+\definecolor{ZurichBlue}{rgb}{.255,.41,.884}
+
+\title[Mejor Luz Ambiental por medio de GPU's]{Mejor Luz Ambiental por medio de GPU's}
+\subtitle{Pedro Xavier Contla Romero}
+\author[X. Contla]{Tutor: Dr. Edgar Garu\~no \'Angeles}
+\institute[PCIC,UNAM]{Depto. Ciencias de la Computaci\'on - IIMAS\linebreak edgargar@ieee.org}
+\date{Enero 6, 2014}
+
+\usefoottemplate{\vbox{%
+   %para hacer transparente la linea structure!25
+	\tinycolouredline{black}% 
+		{\color{white}\textbf{\insertshortauthor\hfill%
+			\insertshorttitle\hfill%
+			\insertshortinstitute}}%
+	%\tinycolouredline{structure}%
+	%	{\color{white}\textbf{\insertshorttitle}\hfill}%
+}}
+
+\begin{document}
+\frame{\titlepage}
+	\section{Lo que se va a ver...}
+		\subsection{Esquema}
+			\begin{frame}\frametitle{Esquema}
+				\begin{itemize}
+					\item Antecedentes
+					\begin{itemize}
+						\item Modelos de Iluminaci\'on
+						\item Sombreados
+					\end{itemize}
+					\item Objetivo
+					\item Metodología
+					      \begin{itemize}
+						\item Mapa de Luces
+						\item Mapa de Sombra
+						\item Método propuesto
+					      \end{itemize}
+					\item Relevancia y Contribuci\'on del trabajo
+					\item Referencias
+					\item Calendario de Actividades
+					
+				\end{itemize}
+			\end{frame}
+
+	\section{Antecedentes}
+		\subsection{Modelos de Iluminaci\'on}
+			\begin{frame}\frametitle{Fundamentos}
+				Simular los efectos que hace la luz sobre las superficies
+					\begin{block}{Modelo de Iluminaci\'on}
+						Calcula la luz que se ve en un punto de la superficie. Un algoritmo utiliza el modelo de iluminaci\'on 
+						para calcular el color de cada pixel.
+					\end{block}
+					Calcular la intensidad proyectada por un punto de la superficie en una dirección específica
+					\begin{block}{Fórmula muy simple}
+					\[I=I_a+I_d+I_e\]
+					\end{block}
+			\end{frame}
+			\begin{frame}\frametitle{Fundamentos}	
+								\[I=I_a+I_d+I_e\]
+				\begin{description}[leftmargin=!]
+					\item [\[I\]] es la intensidad de la luz en un punto específico
+					\item [\[I_a\]] componente que representa la intensidad de luz ambiental (fondo)
+					\item [\[I_d\]] componente que representa la intensidad de luz que se dispersa sobre la superficie
+					\item [\[I_e\]] componente que representa la luz reflejada hacia el observador
+				\end{description}
+			\end{frame}
+			\begin{frame}\frametitle{Fundamentos}	
+				\begin{picture}(0,0)
+				\put(20,-95){\includegraphics[scale=0.30, bb=0 0 0 0]{./imagenes/msimple}}
+				\end{picture}
+			\end{frame}
+			\begin{frame}\frametitle{Fundamentos}	
+			  \begin{columns}
+			    \begin{column}{0.4\textwidth}
+				\begin{block}{Fórmulas}
+					\[C = (M-m)N(\theta)+m\]
+					\[N(\theta) = cos(\theta/2)^p\]
+				\end{block}
+			      \end{column}
+			      \begin{column}{0.7\textwidth}\centering
+				\begin{picture}(0,0)
+				\put(-100,-90){%scale=0.20, bb=0 0 0 0,
+				\includegraphics[width=1.0\linewidth]{./imagenes/mReflx}}
+				\end{picture}
+			      \end{column}
+
+			    \end{columns}
+			\end{frame}
+			\begin{frame}\frametitle{Modelo de Iluminaci\'on - Luz Ambiental}
+				Es la luz que proviene de una fuente pero que ha rebotado mucho en el ambiente. 
+				\begin{block}{Fórmula}
+					\[I_a = i_a k_a\]
+				\end{block}
+				\begin{description}[leftmargin=!]
+				\item [\[i_a\]] es la intensidad de la luz ambiental
+				\item [\[k_a\]] es el coeficiente de reflexión ambiental
+				\end{description}
+			\end{frame}
+			\begin{frame}\frametitle{Modelo de Iluminaci\'on - Luz Difusa}
+				Es la luz que se dispersa en la sobre la superficie. 
+				\begin{block}{Fórmula}
+					\[I_d = i_d k_d<\vec{n},\vec{l}>\]
+				\end{block}
+				\begin{description}[leftmargin=!]
+				\item [\[I_d\]] es la intensidad de la luz difusa
+				\item [\[k_d\]] es el coeficiente de reflexión difuso
+				\item [\[n\]] normal de la superficie
+				\item [\[l\]] posición de la fuente de luz
+				\end{description}
+			\end{frame}
+			\begin{frame}\frametitle{Modelo de Iluminaci\'on - Luz Especular}
+				Es la luz que se refleja directamente al observador
+				\begin{block}{Fórmula}
+					\[I_e = i_e k_e<\vec{o},\vec{l}>^p\]
+				\end{block}
+				\begin{description}[leftmargin=!]
+				\item [\[i_e\]] es la intensidad de la luz especular
+				\item [\[k_e\]] es el coeficiente de reflexión especular
+				\item [\[o\]] posición del observador
+				\item [\[l\]] posición de la fuente de luz
+				\end{description}
+			\end{frame}
+			\begin{frame}\frametitle{Modelo de Iluminaci\'on - Phong}
+				Modelo de Iluminación de Phong
+				\begin{picture}(0,0)
+				\put(-130,-90){%scale=0.20, bb=0 0 0 0,
+				\includegraphics[width=0.9\linewidth]{./imagenes/phongModel}}
+				\end{picture}
+			\end{frame}
+	\section{Objetivo}
+		\subsection{Objetivo}
+			\begin{frame}
+%					\begin{block}{Clasificador de Bayes}
+					Utilizando la capacidad del GPU cambiar la parte constante de la luz ambiental a una función 
+					que dependa principalmente de la distancia de la fuente de luz y de las superficies reflejantes 
+					cercanas.
+%					\end{block}
+%					\begin{block}{Distribución Gaussiana}
+%						\[ G_N(x) = \frac{1}{\sigma \sqrt{2\pi}} exp(\frac{-(x-\mu)^2}{2\sigma^2}) \] si \textbf{x} es escalar
+%						\[ G_N(x) = \frac{1}{2\pi_{N/2} |\Sigma|^{1/2}} exp(\frac{-1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu)) \] si \textbf{x} es un vector N-dimensional
+%					\end{block}
+			\end{frame}
+	\section{Metolodogía}
+		\subsection{Mapa de Luces}
+		\begin{frame}\frametitle{Utilizar Luces}
+		  Es un cálculo que se hace antes de hacer el render a los objetos que están en contacto con la luz directamente.
+		  El cálculo casi siempre se guarda en una textura, la cual se utiliza principalmente para no calcular la iluminaci\'on en las superfices
+		  si la luz siempre es estática. Haciendo el render más rápido. Con esto sabemos que framentos se están alumbrando más.
+		
+		\end{frame}
+		\subsection{Mapa de Sombras}
+			\begin{frame}\frametitle{Utilizando Sombras}
+				Es un cálculo para saber donde se van a proyectar las sobras de los objetos sobre las superfices. Se calcula la profundidad
+				de cada fragmento, esto se guarda en una textura y al momento del render se compara si el framento que se está evaluando
+				está en la sombra o no.
+			      
+				\begin{picture}(0,0)
+				\put(60,-50){%scale=0.20, bb=0 0 0 0,
+				\includegraphics[width=0.5\linewidth]{./imagenes/shadowmapping}}
+				\end{picture}
+				
+			\end{frame}
+		\subsection{Método propuesto}
+			\begin{frame}
+			      Utilizar el mapa de luces para saber que superfices están siendo alumbradas por las fuentes, a estas superfices se puede
+			      aplicar cualquier modelo de iluminaci\'on como Phong. Utilizando el mapa de sombras para saber que zonas de la escena
+			      son las que influye más la luz ambiental.
+			      Para mejorar la percepción, incluir la penumbra y como influye con la luz ambiental.
+			\end{frame}
+					
+	\section{Referencias}
+	  \subsection{Ref1}
+		\begin{frame}\frametitle{¿Dondé puedo encontrar más información?}
+			\begin{itemize}
+			\item  Kontkanen, Janne, Samuli Laine. "Ambient Occlusion Fields",Helsinki University of Technology,(2005)
+			\item Umenhoffer,Tamás, et al. "Efficient Methods for Ambient Lighting",TU Budapest, (2009).
+			\item Oat,Christopher,Sander,Pedro V. "Ambient Aperture Lighting",Association for Computing Machinery,(2007).
+			\item Segal, Mark, et al. "Fast Shadows and Lighting Effects Using Texture Mapping", Computer Graphics, (1992)
+			\item Rost, Randi, "OpenGL Shading Language" 2th Edition,Addison-Wesley,(2006).
+			\end{itemize}
+		\end{frame}
+	  \subsection{Ref2}
+		\begin{frame}\frametitle{¿Dondé puedo encontrar más información?}
+			\begin{itemize}
+			\item Shreiner,Dave, "OpenGL Programming Guide" 7th Edition, Addison-Wesley,(2010).
+			\item Wolf, David, "OpenGL 4.0 Shading Language Cookbook", Packt Publishing, (2011).
+			\item Loos,Bradford, et al. "Modular Radiance Transfer",ACM Transactions on Graphics,(2011).
+			\item Strauss, Paul, "A Realistic Lighting Model for Computer Animators", IEEE Computer Graphics and Applications,(Nov 1990).
+			\item Georgios Papaioannou,"Real-Time Diffuse Global Illumination Using Radiance Hints",Association for Computing Machinery,(2011).
+			\end{itemize}
+		\end{frame}
+	\section{Calendario de Atividades}
+	\begin{frame}
+	\begin{description}
+	      \item [Enero - Febrero:] Trabajar en el programa, obtener resultados concretos, escribir más en el documento de tesis.
+	      \item [Marzo:] Probar con más luces  y seguir escribiendo.
+	      \item [Abril:] Comparaciones de los resultados con otros Modelos de Iluminaci\'on.
+	      \item [Mayo:]  Hacer correciones en el escrito como en el programa.
+	      \item [Junio:] Examen de grado.
+	\end{description}
+	\end{frame}
+\end{document}
