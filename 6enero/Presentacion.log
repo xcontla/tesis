@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.12)  5 JAN 2014 22:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.29)  1 OCT 2014 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Presentacion
 (./Presentacion
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
 (/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty
 Package: beamerbasercs 2012/11/13 (rcs-revision cb16a617839f)
@@ -419,7 +419,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen164
@@ -698,38 +698,7 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemewhale.sty
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/05/16 v3.9f The Babel package
-
-
-! Package babel Error: Unknow option `spanish'. Either you misspelled it
-(babel)                or the language definition file spanish.ldf was not foun
-d.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.293 \ProcessOptions*
-                      
-Valid options are: shorthands=..., KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, or a language name.
-
-
-! Package babel Error: You haven't specified a language option.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.326 ...ry to proceed from here, type x to quit.}
-                                                  
-You need to specify a language, either as a global option
-or as an optional argument to the \usepackage command;
-You shouldn't try to proceed from here, type x to quit.
-
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks42
 \inpenc@posthook=\toks43
@@ -958,7 +927,7 @@ File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2013/05/30 v0.4u Insert pages of external PDF documents (AM)
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -977,10 +946,10 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Cskip=\skip62
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2013/05/30 v0.4u Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box53
 \AM@toc@title=\toks44
@@ -995,29 +964,6 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks45
 \verbatim@line=\toks46
 \verbatim@in@stream=\read2
-)
-(/usr/share/texlive/texmf-dist/tex/latex/movie15/movie15.sty
-Package: movie15 2012/05/16
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
-Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
-)
-\@MXV@page=\count158
-\@MXV@adict=\count159
-\@MXV@aadict=\count160
-\@MXV@includes=\count161
-\@MXV@players=\count162
-\@MXV@links=\count163
-\@MXV@width=\dimen189
-\@MXV@height=\dimen190
-\@MXV@depth=\dimen191
-\@MXV@totalheight=\dimen192
-\@MXV@@boxdepth=\dimen193
-\@MXV@traiselen=\dimen194
-\@MXV@braiselen=\dimen195
-\@MXV@start=\dimen196
-\@MXV@end=\dimen197
-\@MXV@textbox=\box55
 )
 (./Presentacion.aux)
 \openout1 = `Presentacion.aux'.
@@ -1075,16 +1021,16 @@ LaTeX Font Info:    ... okay on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count164
-\scratchdimen=\dimen198
-\scratchbox=\box56
-\nofMPsegments=\count165
-\nofMParguments=\count166
+\scratchcounter=\count158
+\scratchdimen=\dimen189
+\scratchbox=\box55
+\nofMPsegments=\count159
+\nofMParguments=\count160
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count167
-\MPscratchDim=\dimen199
-\MPnumerator=\count168
-\makeMPintoPDFobject=\count169
+\MPscratchCnt=\count161
+\MPscratchDim=\dimen190
+\MPnumerator=\count162
+\makeMPintoPDFobject=\count163
 \everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1102,7 +1048,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box57
+\AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring OFF on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1111,7 +1057,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count170
+\c@section@level=\count164
 )
 LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
@@ -1199,12 +1145,12 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 ] [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+LaTeX Font Info:    Try loading font information for U+msb on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1218,7 +1164,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 			\end{frame}
+l.81 			\end{frame}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1227,7 +1173,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82 			\end{frame}
+l.81 			\end{frame}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1235,7 +1181,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82 			\end{frame}
+l.81 			\end{frame}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1246,7 +1192,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82 			\end{frame}
+l.81 			\end{frame}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1254,7 +1200,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82 			\end{frame}
+l.81 			\end{frame}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1265,7 +1211,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82 			\end{frame}
+l.81 			\end{frame}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1273,7 +1219,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82 			\end{frame}
+l.81 			\end{frame}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1286,22 +1232,22 @@ my insertion and my current dilemma will both disappear.
 ]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 87.
+(pdftex.def)                using `viewport' instead on input line 86.
 
-<./imagenes/msimple.png, id=250, 795.96pt x 615.78pt>
+<./imagenes/msimple.png, id=237, 795.96pt x 615.78pt>
 File: ./imagenes/msimple.png Graphic file (type png)
 
 <use ./imagenes/msimple.png>
-Package pdftex.def Info: ./imagenes/msimple.png used on input line 87.
+Package pdftex.def Info: ./imagenes/msimple.png used on input line 86.
 (pdftex.def)             Requested size: 0.0pt x 0.0pt.
  [5
 
  <./imagenes/msimple.png>]
-<./imagenes/mReflx.png, id=288, 795.96pt x 615.78pt>
+<./imagenes/mReflx.png, id=273, 795.96pt x 615.78pt>
 File: ./imagenes/mReflx.png Graphic file (type png)
 
 <use ./imagenes/mReflx.png>
-Package pdftex.def Info: ./imagenes/mReflx.png used on input line 104.
+Package pdftex.def Info: ./imagenes/mReflx.png used on input line 102.
 (pdftex.def)             Requested size: 215.10196pt x 166.40376pt.
  [6
 
@@ -1309,7 +1255,7 @@ Package pdftex.def Info: ./imagenes/mReflx.png used on input line 104.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.114 			\end{frame}
+l.112 			\end{frame}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1317,7 +1263,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.114 			\end{frame}
+l.112 			\end{frame}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1328,7 +1274,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.114 			\end{frame}
+l.112 			\end{frame}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1336,7 +1282,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.114 			\end{frame}
+l.112 			\end{frame}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1350,7 +1296,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.126 			\end{frame}
+l.124 			\end{frame}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1358,7 +1304,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.126 			\end{frame}
+l.124 			\end{frame}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1369,7 +1315,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.126 			\end{frame}
+l.124 			\end{frame}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1377,7 +1323,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.126 			\end{frame}
+l.124 			\end{frame}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1392,7 +1338,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 			\end{frame}
+l.124 			\end{frame}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1405,7 +1351,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 			\end{frame}
+l.124 			\end{frame}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1417,7 +1363,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.138 			\end{frame}
+l.136 			\end{frame}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1425,7 +1371,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.138 			\end{frame}
+l.136 			\end{frame}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1436,7 +1382,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.138 			\end{frame}
+l.136 			\end{frame}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1444,7 +1390,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.138 			\end{frame}
+l.136 			\end{frame}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1459,7 +1405,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 			\end{frame}
+l.136 			\end{frame}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1472,7 +1418,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 			\end{frame}
+l.136 			\end{frame}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1480,37 +1426,33 @@ or  <return>  to continue without it.
 
 [9
 
-] <./imagenes/phongModel.png, id=429, 602.25pt x 167.87718pt>
+] <./imagenes/phongModel.png, id=411, 602.25pt x 167.87718pt>
 File: ./imagenes/phongModel.png Graphic file (type png)
 
 <use ./imagenes/phongModel.png>
-Package pdftex.def Info: ./imagenes/phongModel.png used on input line 145.
+Package pdftex.def Info: ./imagenes/phongModel.png used on input line 143.
 (pdftex.def)             Requested size: 276.559pt x 77.0938pt.
  [10
 
  <./imagenes/phongModel.png (PNG copy)>]
 [11
 
-] [12
-
-] <./imagenes/shadowmapping.png, id=534, 459.6372pt x 196.5744pt>
+] <./imagenes/shadowmapping.png, id=476, 459.6372pt x 196.5744pt>
 File: ./imagenes/shadowmapping.png Graphic file (type png)
 
 <use ./imagenes/shadowmapping.png>
-Package pdftex.def Info: ./imagenes/shadowmapping.png used on input line 178.
+Package pdftex.def Info: ./imagenes/shadowmapping.png used on input line 163.
 (pdftex.def)             Requested size: 153.64493pt x 65.7096pt.
- [13
+ [12
 
- <./imagenes/shadowmapping.png>] [14
+ <./imagenes/shadowmapping.png>] [13
 
 ]
-[15
+[14
+
+] [15
 
 ] [16
-
-] [17
-
-] [18
 
 ]
 \tf@nav=\write6
@@ -1522,48 +1464,42 @@ Package pdftex.def Info: ./imagenes/shadowmapping.png used on input line 178.
 \tf@snm=\write8
 \openout8 = `Presentacion.snm'.
 
-
-
-Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-(movie15)                @@ Package `movie15' is obsolete and @@
-(movie15)                @@ superseded by `media9'.           @@
-(movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
-(./Presentacion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+ (./Presentacion.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `Presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: 1C30CF54F4891501F80CD048F17CF64F;1900.
+(rerunfilecheck)             Checksum: 28812D0A428CDC05746EE4C2C8B3AD69;1600.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 20687 strings out of 495031
- 359689 string characters out of 6181530
- 458904 words of memory out of 5000000
- 23386 multiletter control sequences out of 15000+600000
+ 20218 strings out of 495028
+ 352198 string characters out of 6181497
+ 416107 words of memory out of 5000000
+ 22939 multiletter control sequences out of 15000+600000
  16445 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,19n,62p,418b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
- </tmp/texfonts/pk/ljfour/jknappen/ec/ecsi0800.600pk> </tmp/texfonts/pk/ljfou
-r/jknappen/ec/ecsi1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecss1000.600
-pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecsx0600.600pk> </tmp/texfonts/pk/ljfo
-ur/jknappen/ec/ecss0800.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecss1095.60
-0pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecss1440.600pk> </tmp/texfonts/pk/ljf
-our/jknappen/ec/ecss0600.600pk></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb>
-Output written on Presentacion.pdf (18 pages, 291466 bytes).
+ </home/xcontla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0800.600pk> </home
+/xcontla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600pk> </home/xcontla/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/xcontla/.texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecsx0600.600pk> </home/xcontla/.texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecss0800.600pk> </home/xcontla/.texmf-var/fonts/pk/ljfour/
+jknappen/ec/ecss1095.600pk> </home/xcontla/.texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecss1440.600pk> </home/xcontla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss06
+00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Presentacion.pdf (16 pages, 287473 bytes).
 PDF statistics:
- 1032 PDF objects out of 1200 (max. 8388607)
- 733 compressed objects within 8 object streams
- 52 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 

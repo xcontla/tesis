@@ -5,7 +5,7 @@
   \setbeamercovered{transparent}
   \setbeamertemplate{blocks}[rounded][shadow=true]
 
-\usepackage[spanish]{babel}
+%\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{pdfpages}
@@ -14,14 +14,14 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 %\usepackage{multimedia}
-\usepackage{movie15}
+%\usepackage{movie15}
 \definecolor{ZurichBlue}{rgb}{.255,.41,.884}
 
 \title[Mejor Luz Ambiental por medio de GPU's para ambientes virtuales]{Mejor Luz Ambiental por medio de GPU's para ambientes virtuales}
 \subtitle{Pedro Xavier Contla Romero}
 \author[X. Contla]{Tutor: Dr. Edgar Garu\~no \'Angeles}
 \institute[PCIC,UNAM]{Depto. Ciencias de la Computaci\'on - IIMAS\linebreak edgargar@ieee.org}
-\date{Enero 6, 2014}
+\date{Octubre 3, 2014}
 
 \usefoottemplate{\vbox{%
    %para hacer transparente la linea structure!25
@@ -41,19 +41,24 @@
 				\begin{itemize}
 					\item Antecedentes
 					\begin{itemize}
+						\item Pistas de Tridimensionalidad
 						\item Modelos de Iluminaci\'on
-						\item Sombreados
+					\end{itemize}
+					\item Graphic Processor Unit
+					\begin{itemize}
+						\item GPU
+						\item OpenGL y GLSL
+						
 					\end{itemize}
 					\item Objetivo
-					\item Metodología
+					\item Metodolog\'ia
 					      \begin{itemize}
 						\item Mapa de Sombra
+						\item Calculo de pixeles
 						\item Método propuesto
 					      \end{itemize}
 					\item Relevancia y Contribuci\'on del trabajo
 					\item Referencias
-					\item Calendario de Actividades
-					
 				\end{itemize}
 			\end{frame}
 
@@ -71,7 +76,7 @@
 					\end{block}
 			\end{frame}
 			\begin{frame}\frametitle{Fundamentos}	
-								\[I=I_a+I_d+I_e\]
+					\[I=I_a+I_d+I_e\]
 				\begin{description}[leftmargin=!]
 					\item [\[I\]] es la intensidad de la luz en un punto específico
 					\item [\[I_a\]] componente que representa la intensidad de luz ambiental (fondo)
@@ -89,7 +94,7 @@
 			    \begin{column}{0.4\textwidth}
 				\begin{block}{Fórmulas}
 					\[C = (M-m)N(\theta)+m\]
-					\[N(\theta) = cos(\theta/2)^p\]
+					\[N(\theta) = cos^p(\theta/2)\]
 				\end{block}
 			      \end{column}
 			      \begin{column}{0.7\textwidth}\centering
@@ -98,7 +103,6 @@
 				\includegraphics[width=1.0\linewidth]{./imagenes/mReflx}}
 				\end{picture}
 			      \end{column}
-
 			    \end{columns}
 			\end{frame}
 			\begin{frame}\frametitle{Modelo de Iluminaci\'on - Luz Ambiental}
@@ -136,7 +140,7 @@
 				\end{description}
 			\end{frame}
 			\begin{frame}\frametitle{Modelo de Iluminaci\'on - Phong}
-				Modelo de Iluminación de Phong
+				Modelo de Iluminaci\'on de Phong
 				\begin{picture}(0,0)
 				\put(-130,-90){%scale=0.20, bb=0 0 0 0,
 				\includegraphics[width=0.9\linewidth]{./imagenes/phongModel}}
@@ -145,24 +149,11 @@
 	\section{Objetivo}
 		\subsection{Objetivo}
 			\begin{frame}
-%					\begin{block}{Clasificador de Bayes}
-					Utilizando la capacidad del GPU cambiar la parte constante de la luz ambiental a una función 
-					que dependa principalmente de la distancia de la fuente de luz y de las superficies reflejantes 
-					cercanas.
-%					\end{block}
-%					\begin{block}{Distribución Gaussiana}
-%						\[ G_N(x) = \frac{1}{\sigma \sqrt{2\pi}} exp(\frac{-(x-\mu)^2}{2\sigma^2}) \] si \textbf{x} es escalar
-%						\[ G_N(x) = \frac{1}{2\pi_{N/2} |\Sigma|^{1/2}} exp(\frac{-1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu)) \] si \textbf{x} es un vector N-dimensional
-%					\end{block}
+				Utilizando la capacidad del GPU cambiar la parte constante de la luz ambiental a una función 
+				que dependa principalmente de la distancia de la fuente de luz y de las superficies reflejantes 
+				cercanas.
 			\end{frame}
 	\section{Metolodogía}
-		\subsection{Mapa de Luces}
-		\begin{frame}\frametitle{Utilizar Luces}
-		  Es un cálculo que se hace antes de hacer el render a los objetos que están en contacto con la luz directamente.
-		  El cálculo casi siempre se guarda en una textura, la cual se utiliza principalmente para no calcular la iluminaci\'on en las superfices
-		  si la luz siempre es estática. Haciendo el render más rápido. Con esto sabemos que framentos se están alumbrando más.
-		
-		\end{frame}
 		\subsection{Mapa de Sombras}
 			\begin{frame}\frametitle{Utilizando Sombras}
 				Es un cálculo para saber donde se van a proyectar las sobras de los objetos sobre las superfices. Se calcula la profundidad
@@ -210,14 +201,14 @@
 			\item Georgios Papaioannou,"Real-Time Diffuse Global Illumination Using Radiance Hints",Association for Computing Machinery,(2011).
 			\end{itemize}
 		\end{frame}
-	\section{Calendario de Atividades}
-	\begin{frame}
-	\begin{description}
-	      \item [Enero - Febrero:] Trabajar en el programa, obtener resultados concretos, escribir más en el documento de tesis.
-	      \item [Marzo:] Probar con más luces  y seguir escribiendo.
-	      \item [Abril:] Comparaciones de los resultados con otros Modelos de Iluminaci\'on.
-	      \item [Mayo:]  Hacer correciones en el escrito como en el programa.
-	      \item [Junio:] Examen de grado.
-	\end{description}
-	\end{frame}
+%	\section{Calendario de Atividades}
+%	\begin{frame}
+%	\begin{description}
+%	      \item [Enero - Febrero:] Trabajar en el programa, obtener resultados concretos, escribir más en el documento de tesis.
+%	      \item [Marzo:] Probar con más luces  y seguir escribiendo.
+%	      \item [Abril:] Comparaciones de los resultados con otros Modelos de Iluminaci\'on.
+%	      \item [Mayo:]  Hacer correciones en el escrito como en el programa.
+%	      \item [Junio:] Examen de grado.
+%	\end{description}
+%	\end{frame}
 \end{document}
